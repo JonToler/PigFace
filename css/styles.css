@@ -1,1 +1,20 @@
+.jumbotron {
+background-image: url("../img/and.jpg");
+width: 100%;
+color: white;
 
+}
+#coder {
+  height: 300px;
+  width: 100%;
+}
+body {
+background-image: -webkit-linear-gradient(left, #b8e1fc 0%, #A9D2F3 10%, #90BAE4 25%, #90BCEA 37%, #90BFF0 50%, #6BA8E5 51%, #A2DAF5 83%, #bdf3fd 100%);
+}
+#pi {
+  width: 100%;
+  height: 500px;
+}
+#pigout {
+  font-size: 25px;
+}
