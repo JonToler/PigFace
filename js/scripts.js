@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   function translator(input){
     var vowels = ["a","e","i","o","u"];
     var specChars = ["!","?",".",","];
@@ -6,6 +7,18 @@ $(document).ready(function(){
     var consonants = "";
     var punctuation = "";
     var numbers = ["1","2","3","4","5","6","7","8","9","0"];
+    sentence.forEach(function(word) {
+      result += translator(word) + " ";
+      });
+      $("#pigOut").text(result);
+      $("#pigFace").submit(function(event){
+        var sentence = $("#pigIn").val().toLowerCase().split(" ");
+
+        var result = [];
+
+
+
+
 
     if(specChars.includes(input[input.length-1])){
       punctuation = input[input.length-1];
@@ -29,16 +42,12 @@ $(document).ready(function(){
     return input.slice(i)+consonants+"ay"+punctuation;
   }
 
-  $("#pigFace").submit(function(event){
-    var sentence = $("#pigIn").val().toLowerCase().split(" ");
 
-    var result = [];
 
-    sentence.forEach(function(word) {
-      result += translator(word) + " ";
+
     });
 
-    $("#pigOut").text(result);
+
     event.preventDefault();
-  });
+
 });
