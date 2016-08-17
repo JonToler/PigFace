@@ -51,4 +51,4 @@ _jQuery_
 
 _This software is licensed under the MIT license._
 
-Copyright (c) 2016 Stephen Newkirk and Jon Toler All Rights Reserved.
+Copyright (c) 2016 David Bethune and Jon Toler All Rights Reserved.
